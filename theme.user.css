@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Pitt Canvas Dark Mode
 @namespace      https://github.com/robbyhorvath/pitt-canvas-dark-mode
-@version        1.0.0
+@version        1.0.1
 @author         https://github.com/robbyhorvath
+@editor         https://github.com/mateenkasim
 ==/UserStyle== */
 @-moz-document url-prefix("https://canvas.pitt.edu/") {
     p,
-    span,
     strong {
         color: #F8F9FA;
     }
@@ -26,7 +26,16 @@
     svg {
         color: #CDB87D !important
     }
-
+    
+    a{
+        color: #CDB87D
+    }
+    select {
+    width: 220px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+    
     /*  */
     .ic-app-header__main-navigation {
         background: #CDB87D !important
@@ -62,6 +71,21 @@
     .fhWLw_bGBk {
         display: none
     }
+    #right-side .events_list .event-details:after, 
+    #right-side .events_list .todo-details:after, 
+    #right-side .to-do-list .event-details:after, 
+    #right-side .to-do-list .todo-details:after{
+        background: none
+    }
+    .icon-assignment:before{
+        color: white
+    }
+    .icon-quiz:before{
+        color: orange
+    }
+    .icon-calendar-day:before{
+        color: grey
+    }
     #planner-todosidebar-item-list li span {
         color: #CDB87D !important
     }
@@ -74,7 +98,10 @@
     }
     .event-details::after,
     .ic-app-header__logomark {
-        display: none
+        display: block
+    }
+    .unpublished_courses_redesign .ic-DashboardCard__box__header{
+        background: none;
     }
     .percent {
         color: #CDB87D !important
@@ -324,13 +351,13 @@
     .panel__primary,
     .message-list .messages > li {
         background-color: #343434 !important;
-        color: #F8F9FA !important;
+        color: #E0E0E0 !important;
     }
     .message-list .messages > li h1,
     .message-list .messages > li h2,
     .message-list .messages > li div,
     .message-list .messages > li h3 {
-        color: #F8F9FA !important;
+        color: #E0E0E0 !important;
     }
 
     .message-list .message-count {
