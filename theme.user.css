@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Pitt Canvas Dark Mode
 @namespace      https://github.com/robbyhorvath/pitt-canvas-dark-mode
-@version        1.0.1
+@version        1.0.0
 @author         https://github.com/robbyhorvath
 @editor         https://github.com/mateenkasim
 ==/UserStyle== */
@@ -60,6 +60,12 @@
     .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
         background: #b09d6a
     }
+    .entry>.bottom-reply-with-box .discussion-entry-reply-area.reply-box-container, .bottom-reply-with-box{
+            background: #464646 !important;
+    }
+    .student-groups.show-body, .student-group-header{
+        background-color: #464646 !important;
+    }
     .cjUyb_bGBk.cjUyb_fpfC,
     input.cjUyb_bGBk[type].cjUyb_fpfC {
         color: #F8F9FA;
@@ -71,20 +77,41 @@
     .fhWLw_bGBk {
         display: none
     }
+    .mini-cal-header {
+        color: #CDB87D
+    }
     #right-side .events_list .event-details:after, 
     #right-side .events_list .todo-details:after, 
     #right-side .to-do-list .event-details:after, 
     #right-side .to-do-list .todo-details:after{
         background: none
     }
-    .icon-assignment:before{
-        color: white
+    .icon-assignment:before, [name="IconAssignment"]{
+        color: #AACCFF !important
     }
-    .icon-quiz:before{
-        color: orange
+    .icon-quiz:before, [name="IconQuiz"]{
+        color: #f9b841 !important
     }
-    .icon-calendar-day:before{
-        color: grey
+    .icon-calendar-day:before, [name="IconCalendarDay"], [name="IconCalendarMonth"]{
+        color: grey !important
+    }
+    .icon-paperclip:before, [name="IconPaperclip"]{
+        color: white !important
+    }
+    .icon-document:before, [name="IconDocument"]{
+        color: #4682B4 !important
+    }
+    .icon-discussion:before, [name="IconDiscussion"]{
+        color: #ffffbc !important
+    }
+    .icon-announcement:before, [name="IconAnnouncement"]{
+        color: #CDB87D !important
+    }
+    .mce-container * {
+        color: #CDB87D !important
+    }
+    .mce-i-backcolor:before{
+        background: grey
     }
     #planner-todosidebar-item-list li span {
         color: #CDB87D !important
@@ -211,6 +238,9 @@
     .module-sequence-footer-content {
         background: #343434 !important;
     }
+    [for="onlyUnread"]{
+        color: #CDB87D !important
+    }
     .ic-Layout-contentMain,
     .alert {
         background-color: #343434 !important;
@@ -280,6 +310,12 @@
     .message {
         background: #464646 !important
     }
+    .discussion-pubdate, .discussion-tododate {
+        color: #CDB87D !important
+    }
+    .ic-unread-badge__total-count{
+        background: #AACCFF
+    }
     #calendar-app .fc-month-view .fc-widget-header,
     #calendar-drag-and-drop-container .fc-month-view .fc-widget-header {
         background-color: #343434 !important;
@@ -326,6 +362,7 @@
     }
     .ic-notification__content,
     .ic-Table.ic-Table--condensed td,
+    .pinned-discussions-v2__wrapper,
     .unpinned-discussions-v2__wrapper,
     .discussions-v2__container-image,
     .closed-for-comments-discussions-v2__wrapper,
@@ -344,6 +381,9 @@
     }
     .header-bar {
         background: none
+    }
+    .ic-Login-confirmation__content{
+        color: #555555 !important
     }
 
     /* end of groups */
